@@ -3,21 +3,27 @@
   display: flex;
   justify-content: center;
   &__img{
-    // position: absolute;
-    // display: block;
-    // border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    position: absolute;
+    bottom:3em;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-image: url("./components/follow-app/main-profile/__main-profile__details/Rick-astley.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   &__text{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 38px;
     &__name{
-      font-size: 25px;
+      font-size: 18px;
+      // letter-spacing: 1.22px;
     }
     &__address{
-
+      font-size: 12px;
     }
   }
 }

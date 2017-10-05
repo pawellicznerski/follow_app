@@ -3,14 +3,24 @@
   display: flex;
   justify-content: center; }
   .main-profile__details__img {
-    height: 50px;
-    width: 50px; }
+    position: absolute;
+    bottom: 3em;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-image: url("./components/follow-app/main-profile/__main-profile__details/Rick-astley.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
   .main-profile__details__text {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 38px; }
     .main-profile__details__text__name {
-      font-size: 25px; }
+      font-size: 18px; }
+    .main-profile__details__text__address {
+      font-size: 12px; }
 
 .main-profile__share-btn {
   align-self: flex-end;
@@ -20,8 +30,8 @@
   background-repeat: no-repeat;
   border: 0 solid red;
   outline: none;
-  height: 23px;
-  width: 23px;
+  height: 10.1px;
+  width: 10.1px;
   margin: 4px; }
   .main-profile__share-btn:active {
     border: 3px solid white; }
@@ -29,7 +39,7 @@
 .main-profile {
   width: 84vw;
   height: 84vw;
-  margin-top: 12vw;
+  margin-top: 36px;
   border-radius: 10px;
   border: 1px solid red;
   display: flex;
@@ -38,14 +48,15 @@
 .primary-container {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-family: 'Montserrat', sans-serif; }
   .primary-container .follow-app {
     border-radius: 10px;
     margin-top: 1em;
     min-width: 310px;
-    width: 95%;
-    min-height: 95%;
-    background: linear-gradient(to bottom, #000082 30%, white 0%);
+    width: 90%;
+    min-height: 90%;
+    background: linear-gradient(to bottom, #002C71 95px, white 0%);
     display: flex;
     justify-content: center; }
 
