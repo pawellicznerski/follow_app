@@ -1,0 +1,23 @@
+.main-profile__details{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &__img{
+    // position: absolute;
+    // display: block;
+    // border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__name{
+      font-size: 25px;
+    }
+    &__address{
+
+    }
+  }
+}

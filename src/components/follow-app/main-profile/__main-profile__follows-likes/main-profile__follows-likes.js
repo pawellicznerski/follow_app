@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 // import CVpage from './components/cv-page/cv-page';
 
-class MainProfile extends Component {
+class FollowsLikes extends Component {
   render() {
     return (
-      <div className="main-profile">
+      <div className="main-profile__follows-likes">
       </div>
     );
   }
 }
 
-export default MainProfile;
+export default FollowsLikes;

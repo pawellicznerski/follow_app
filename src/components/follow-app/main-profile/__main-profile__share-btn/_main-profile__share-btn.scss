@@ -1,0 +1,16 @@
+
+.main-profile__share-btn{
+  align-self: flex-end;
+  background-image: url("./components/follow-app/main-profile/__main-profile__share-btn/share-icon.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0 solid red;
+  outline:none;
+  height: 23px;
+  width: 23px;
+  margin: 4px;
+  &:active{
+    border:3px solid white;
+  }
+}

@@ -1,0 +1,13 @@
+@import "./__main-profile__details/main-profile__details";
+@import "./__main-profile__follows-likes/main-profile__follows-likes";
+@import "./__main-profile__share-btn/main-profile__share-btn";
+
+.main-profile{
+  width:84vw;
+  height: 84vw;
+  margin-top: 12vw;
+  border-radius: 10px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
