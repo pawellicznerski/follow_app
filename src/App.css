@@ -1,10 +1,12 @@
 .main-profile__details {
   position: relative;
+  border: 1px solid purple;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-content: flex-start; }
   .main-profile__details__img {
     position: absolute;
-    bottom: 3em;
+    bottom: 53px;
     border-radius: 50%;
     height: 70px;
     width: 70px;
@@ -12,15 +14,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
-  .main-profile__details__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 38px; }
-    .main-profile__details__text__name {
-      font-size: 18px; }
-    .main-profile__details__text__address {
-      font-size: 12px; }
+  .main-profile__details__text__name {
+    font-size: 18px;
+    color: #002C71;
+    font-weight: normal; }
+  .main-profile__details__text__address {
+    font-size: 12px;
+    color: #8298B9; }
 
 .main-profile__share-btn {
   align-self: flex-end;
@@ -30,9 +30,9 @@
   background-repeat: no-repeat;
   border: 0 solid red;
   outline: none;
-  height: 10.1px;
-  width: 10.1px;
-  margin: 4px; }
+  height: 14.1px;
+  width: 14.1px;
+  margin: 11.9px; }
   .main-profile__share-btn:active {
     border: 3px solid white; }
 
@@ -40,7 +40,7 @@
   width: 84vw;
   height: 84vw;
   margin-top: 36px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid red;
   display: flex;
   flex-direction: column; }
@@ -48,10 +48,10 @@
 .primary-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif; }
+  align-items: center; }
   .primary-container .follow-app {
-    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
     margin-top: 1em;
     min-width: 310px;
     width: 90%;
