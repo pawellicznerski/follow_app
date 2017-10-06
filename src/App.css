@@ -1,30 +1,86 @@
-.main-profile__details {
+.details {
   position: relative;
-  border: 1px solid purple;
   display: flex;
   justify-content: center;
   align-content: flex-start; }
-  .main-profile__details__img {
+  .details__img {
     position: absolute;
-    bottom: 53px;
+    bottom: 57px;
     border-radius: 50%;
     height: 70px;
     width: 70px;
-    background-image: url("./components/follow-app/main-profile/__main-profile__details/Rick-astley.jpg");
+    background-image: url("./components/follow-app/main-profile/details/Rick-astley.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
-  .main-profile__details__text__name {
-    font-size: 18px;
-    color: #002C71;
-    font-weight: normal; }
-  .main-profile__details__text__address {
-    font-size: 12px;
-    color: #8298B9; }
+  .details__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .details__text__name {
+      font-size: 18px;
+      color: #002C71;
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      padding: 0 0 0 28px; }
+      .details__text__name__likes-btn {
+        margin: 0 0 0 10px;
+        height: 18px;
+        width: 18px;
+        background-image: url("./components/follow-app/main-profile/details/heart.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        outline: none;
+        border: 0; }
+        .details__text__name__likes-btn:active {
+          border: 3px solid white; }
+    .details__text__address {
+      font-size: 12px;
+      color: #8298B9; }
 
-.main-profile__share-btn {
+.follows-likes__follow-btn {
+  border: 0;
+  border-radius: 30px;
+  outline: none;
+  width: 88%;
+  height: 48px;
+  background-color: #FFA640;
+  margin-top: 21px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 4.2px;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .follows-likes__follow-btn:active {
+    border: 3px solid white; }
+
+.follows-likes__counters__single-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .follows-likes__counters__single-counter__number {
+    color: #FFA640;
+    font-size: 24px; }
+  .follows-likes__counters__single-counter__text {
+    color: #8298B9;
+    font-size: 10px; }
+
+.follows-likes__counters {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+
+.follows-likes {
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.share-btn {
   align-self: flex-end;
-  background-image: url("./components/follow-app/main-profile/__main-profile__share-btn/share-icon.svg");
+  background-image: url("./components/follow-app/main-profile/share-btn/share-icon.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,17 +89,18 @@
   height: 14.1px;
   width: 14.1px;
   margin: 11.9px; }
-  .main-profile__share-btn:active {
+  .share-btn:active {
     border: 3px solid white; }
 
 .main-profile {
-  width: 84vw;
-  height: 84vw;
+  width: 85%;
+  min-width: 283px;
+  min-height: 235px;
   margin-top: 36px;
   border-radius: 5px;
-  border: 1px solid red;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.5); }
 
 .primary-container {
   display: flex;

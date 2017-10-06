@@ -1,6 +1,6 @@
 .details{
   position: relative;
-  border: 1px solid purple;
+  // border: 1px solid purple;
   display: flex;
   justify-content: center;
   align-content: flex-start;
@@ -16,22 +16,40 @@
     background-size: cover;
   }
   &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__name{
+      // border: 1px solid red;
       font-size: 18px;
       color: #002C71;
       font-weight: normal;
+      display: flex;
+      align-items: center;
+      padding:0 0 0 28px;
+      &__likes-btn{
+        // border: 1px solid blue;
+        //
+        margin:0 0 0 10px;
+        height: 18px;
+        width: 18px;
+        background-image: url("./components/follow-app/main-profile/details/heart.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        outline: none;
+        border: 0;
+        &:active{
+          border: 3px solid white;
+        }
+      }
     }
     &__address{
+      // border: 1px solid blue;
+
       font-size: 12px;
       color: #8298B9;
     }
   }
-  &__likes-btn{
-    position: absolute;
-    height: 70px;
-    width: 20px;
-    background-image: url("./components/follow-app/main-profile/details/Rick-astley.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;  }
+
 }
