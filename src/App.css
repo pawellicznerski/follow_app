@@ -15,7 +15,18 @@
     color: #FFA640;
     margin: 25px auto; }
   .comments__input {
-    border: 2px solid #DBE0E8; }
+    border: 0;
+    border-bottom: 2px solid #DBE0E8;
+    width: 80%;
+    height: 27px; }
+    .comments__input::placeholder {
+      font-size: 18px;
+      color: #8298B9; }
+    .comments__input:focus {
+      border: 0;
+      border-bottom: 3px solid #FFA640;
+      color: #8298B9;
+      font-size: 16px; }
 
 .details {
   position: relative;

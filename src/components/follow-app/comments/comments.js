@@ -14,7 +14,7 @@ class Comments extends Component {
       <div className="comments">
         <button className="comments__toggle-comments">{this.state.showComments?"Hide ":"Show "}comments{this.state.commentsCounter}</button>
         <CommentsGrid></CommentsGrid>
-        <input className="comments__input"></input>
+        <input className="comments__input" placeholder="Add a comment"></input>
       </div>
     );
   }
