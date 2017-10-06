@@ -1,3 +1,22 @@
+.comments {
+  width: 85%;
+  min-width: 283px;
+  min-height: 235px;
+  margin-top: 12px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.5); }
+  .comments__toggle-comments {
+    border: 0;
+    background-color: white;
+    font-size: 14px;
+    color: #FFA640;
+    margin: 25px auto; }
+  .comments__input {
+    border: 2px solid #DBE0E8; }
+
 .details {
   position: relative;
   display: flex;
@@ -115,6 +134,7 @@
     min-height: 90%;
     background: linear-gradient(to bottom, #002C71 95px, white 0%);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; }
 
 * {

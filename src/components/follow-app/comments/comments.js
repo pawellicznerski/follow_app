@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
-// import CVpage from './components/cv-page/cv-page';
+import CommentsGrid from './comments-grid/comments-grid';
 
-class Comments  extends Component {
+class Comments extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      showComments:true,
+      commentsCounter:"(23)",
+    }
+  }
   render() {
     return (
-      <div className="App">
+      <div className="comments">
+        <button className="comments__toggle-comments">{this.state.showComments?"Hide ":"Show "}comments{this.state.commentsCounter}</button>
+        <CommentsGrid></CommentsGrid>
+        <input className="comments__input"></input>
       </div>
     );
   }
