@@ -1,0 +1,13 @@
+.follows-likes__counters__single-counter{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  &__number{
+    color: #FFA640;
+    font-size: 24px;
+  }
+  &__text{
+    color: #8298B9;
+    font-size: 10px;
+  }
+}

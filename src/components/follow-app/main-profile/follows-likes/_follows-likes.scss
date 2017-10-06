@@ -1,0 +1,11 @@
+@import "./__follows-likes__follow-btn/follows-likes__follow-btn";
+@import "./__follows-likes__counters/follows-likes__counters";
+// @import "./__follow-likes__follow-btn/follow-likes__follow-btn";
+
+.follows-likes{
+  border: 1px solid black;
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

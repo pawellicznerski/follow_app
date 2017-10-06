@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ShareBtn from './__main-profile__share-btn/main-profile__share-btn';
-import Details from './__main-profile__details/main-profile__details';
-import FollowsLikes from './__main-profile__follows-likes/main-profile__follows-likes';
+import ShareBtn from './share-btn/share-btn';
+import Details from './details/details';
+import FollowsLikes from './follows-likes/follows-likes';
 
 class MainProfile extends Component {
   render() {

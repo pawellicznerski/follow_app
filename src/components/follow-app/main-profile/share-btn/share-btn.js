@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 // import CVpage from './components/cv-page/cv-page';
 
-class FollowsLikes extends Component {
+class ShareBtn extends Component {
   render() {
     return (
-      <div className="main-profile__follows-likes">
-      </div>
+      <button className="share-btn">
+      </button>
     );
   }
 }
 
-export default FollowsLikes;
+export default ShareBtn;

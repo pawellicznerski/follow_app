@@ -1,4 +1,4 @@
-.main-profile__details{
+.details{
   position: relative;
   border: 1px solid purple;
   display: flex;
@@ -6,11 +6,11 @@
   align-content: flex-start;
   &__img{
     position: absolute;
-    bottom:53px;
+    bottom:57px;
     border-radius: 50%;
     height: 70px;
     width: 70px;
-    background-image: url("./components/follow-app/main-profile/__main-profile__details/Rick-astley.jpg");
+    background-image: url("./components/follow-app/main-profile/details/Rick-astley.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,4 +26,12 @@
       color: #8298B9;
     }
   }
+  &__likes-btn{
+    position: absolute;
+    height: 70px;
+    width: 20px;
+    background-image: url("./components/follow-app/main-profile/details/Rick-astley.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  }
 }

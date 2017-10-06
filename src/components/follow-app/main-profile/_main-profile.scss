@@ -1,13 +1,15 @@
-@import "./__main-profile__details/main-profile__details";
-@import "./__main-profile__follows-likes/main-profile__follows-likes";
-@import "./__main-profile__share-btn/main-profile__share-btn";
+@import "./details/details";
+@import "./follows-likes/follows-likes";
+@import "./share-btn/share-btn";
 
 .main-profile{
-  width:84vw;
-  height: 84vw;
+  width: 85%;
+  min-width:283px;
+  min-height: 235px;
   margin-top: 36px;
   border-radius: 5px;
-  border: 1px solid red;
+  // border: 1px solid red;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
 }
