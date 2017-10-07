@@ -1,9 +1,7 @@
 .single-comment{
-  // border: 1px solid red;
   width: 100%;
   display: flex;
   &__icon{
-    // border: 1px solid green;
     width:40px;
     height:40px;
     border-radius: 50%;
@@ -14,7 +12,6 @@
     background-color: rgba(170, 170, 170, 1);
   }
   &__content{
-    // border: 1px solid blue;
     width: 79%;
     margin: 11px 0 0 11px;
     display: flex;
@@ -24,10 +21,8 @@
     &__name{
       font-size: 14px;
       width: 80%;
-      // border: 1px solid red;
     }
     &__date{
-      // border: 1px solid blue;
       opacity: 0.5;
       width: 20%;
       display: flex;

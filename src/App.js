@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import FollowApp from "./components/follow-app/follow-app.js";
+import FollowAppStore from "./follow-app-store.js";
+import { Provider } from 'react-redux';
+import store from './store';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <FollowApp/>
-      </div>
+      <Provider store={store}>
+        <FollowAppStore/>
+      </Provider>
     );
   }
 }

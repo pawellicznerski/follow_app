@@ -7,8 +7,8 @@ class FollowApp extends Component {
     return (
       <div className="primary-container">
         <div className="follow-app">
-          <MainProfile/>
-          <Comments/>
+          <MainProfile {...this.props}/>
+          <Comments {...this.props}/>
         </div>
       </div>
     );

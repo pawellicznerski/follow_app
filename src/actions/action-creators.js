@@ -24,3 +24,9 @@ export function removeComment(postId, i) {
     postId
   }
 }
+
+//hide comments
+
+//show comments
+
+// show address
