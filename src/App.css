@@ -1,3 +1,37 @@
+.single-comment {
+  width: 100%;
+  display: flex; }
+  .single-comment__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url("./components/follow-app/comments/comments-grid/__comments-grid__single-comment/person.svg");
+    background-position: center;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-color: #aaaaaa; }
+  .single-comment__content {
+    width: 79%;
+    margin: 11px 0 0 11px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #002C71;
+    font-size: 14px; }
+    .single-comment__content__name {
+      font-size: 14px;
+      width: 80%; }
+    .single-comment__content__date {
+      opacity: 0.5;
+      width: 20%;
+      display: flex;
+      justify-content: flex-end; }
+    .single-comment__content__text {
+      padding-right: 10px;
+      line-height: 21px; }
+
+.comments-grid {
+  width: 85%; }
+
 .comments {
   width: 85%;
   min-width: 283px;
@@ -18,7 +52,8 @@
     border: 0;
     border-bottom: 2px solid #DBE0E8;
     width: 80%;
-    height: 27px; }
+    height: 27px;
+    margin: 2em 0; }
     .comments__input::placeholder {
       font-size: 18px;
       color: #8298B9; }

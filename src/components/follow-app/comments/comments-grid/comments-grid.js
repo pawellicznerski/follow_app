@@ -4,9 +4,9 @@ import SingleComment from './__comments-grid__single-comment/comments-grid__sing
 class CommentsGrid extends Component {
   render() {
     return (
-      <ul className="comments-grid">
+      <div className="comments-grid">
         <SingleComment/>
-      </ul>
+      </div>
     );
   }
 }
