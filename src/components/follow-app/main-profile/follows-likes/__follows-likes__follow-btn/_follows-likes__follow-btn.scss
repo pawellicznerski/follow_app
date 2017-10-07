@@ -1,3 +1,5 @@
+@import "./../../../_cv-page__base/media-query-mixins";
+
 .follows-likes__follow-btn{
   border: 0;
   border-radius: 30px;
@@ -11,6 +13,10 @@
   letter-spacing: 4.2px;
   text-transform: uppercase;
   font-weight: bold;
+  @include mobile{
+    width: 35%;
+    margin: 0 2% 0 1%;
+  };
   &:active{
     border: 3px solid white;
   }

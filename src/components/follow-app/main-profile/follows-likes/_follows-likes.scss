@@ -1,6 +1,6 @@
 @import "./__follows-likes__follow-btn/follows-likes__follow-btn";
 @import "./__follows-likes__counters/follows-likes__counters";
-// @import "./__follow-likes__follow-btn/follow-likes__follow-btn";
+@import "./../../_cv-page__base/media-query-mixins";
 
 .follows-likes{
   // border: 1px solid black;
@@ -8,4 +8,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include mobile{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 19px 0;
+  };
 }

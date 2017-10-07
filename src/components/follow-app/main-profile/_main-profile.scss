@@ -1,6 +1,7 @@
 @import "./details/details";
 @import "./follows-likes/follows-likes";
 @import "./share-btn/share-btn";
+@import "./../_cv-page__base/media-query-mixins";
 
 .main-profile{
   width: 85%;
@@ -12,4 +13,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  @include mobile{
+    min-height: 186px;
+  };
 }

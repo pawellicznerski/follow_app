@@ -1,5 +1,6 @@
 @import "./comments/comments";
 @import "./main-profile/main-profile";
+@import "./_cv-page__base/cv-page__base__variables";
 
 @mixin linearGradientEf($colors...){
 background: repeating-linear-gradient($colors);
@@ -25,5 +26,9 @@ background: -moz-linear-gradient($colors);
     flex-wrap: wrap;
     justify-content: center;
     // align-items: flex-start;
+    @include laptop{
+      width: 1000px;
+      box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+    };
   }
 }

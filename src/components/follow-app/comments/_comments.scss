@@ -1,4 +1,5 @@
 @import "./comments-grid/comments-grid";
+@import "./../_cv-page__base/media-query-mixins";
 
 .comments{
   width: 85%;
@@ -16,6 +17,13 @@
     font-size: 14px;
     color: #FFA640;
     margin: 25px auto;
+    @include mobile{
+      width: 85%;
+      align-self: flex-start;
+      display: flex;
+      justify-content: flex-start;
+      margin: 25px auto;
+    };
   }
   &__input{
     border:0;
