@@ -16,6 +16,7 @@ class SingleComment extends Component {
           <span className="single-comment__content__date">1d</span>
           <p className="single-comment__content__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum scelerisque convallis. Praesent non fringilla risus. Proin blandit eget lacus nec facilisis. Curabitur pellentesque finibus dictum. Fusce vel ornare sem. Integer interdum velit sed molestie interdum. Etiam maximus dui eget diam commodo lacinia.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum scelerisque convallis. Praesent non fringilla risus. Proin blandit eget lacus nec facilisis. Curabitur pellentesque finibus dictum. Fusce vel ornare sem. Integer interdum velit sed molestie interdum. Etiam maximus dui eget diam commodo lacinia.
           </p>
         </div>
       </article>

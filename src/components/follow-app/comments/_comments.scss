@@ -25,10 +25,20 @@
       margin: 25px auto;
     };
   }
+  &__input-cnt{
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom:0;
+    width: 80%;
+    padding-bottom: 5vw;
+  }
   &__input{
     border:0;
     border-bottom: 2px solid #DBE0E8;
-    width: 80%;
+    width: 95%;
     height: 27px;
     margin: 2em 0;
     &::placeholder{

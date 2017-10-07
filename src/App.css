@@ -26,7 +26,7 @@
       display: flex;
       justify-content: flex-end; }
     .single-comment__content__text {
-      padding-right: 10px;
+      padding: 0 10px 70px 0;
       line-height: 21px; }
 
 .comments-grid {
@@ -55,10 +55,19 @@
         display: flex;
         justify-content: flex-start;
         margin: 25px auto; } }
+  .comments__input-cnt {
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    padding-bottom: 5vw; }
   .comments__input {
     border: 0;
     border-bottom: 2px solid #DBE0E8;
-    width: 80%;
+    width: 95%;
     height: 27px;
     margin: 2em 0; }
     .comments__input::placeholder {
@@ -214,7 +223,7 @@
     margin-top: 1em;
     min-width: 310px;
     width: 90%;
-    min-height: 90%;
+    height: 100%;
     background: linear-gradient(to bottom, #002C71 95px, white 0%);
     display: flex;
     flex-wrap: wrap;
