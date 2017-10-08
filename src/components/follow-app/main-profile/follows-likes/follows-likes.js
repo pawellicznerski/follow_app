@@ -6,8 +6,8 @@ export default class FollowsLikes extends Component {
   render() {
     return (
       <div className="follows-likes">
-        <Counters/>
-        <FollowBtn/>
+        <Counters {...this.props}/>
+        <FollowBtn {...this.props}/>
       </div>
     );
   }

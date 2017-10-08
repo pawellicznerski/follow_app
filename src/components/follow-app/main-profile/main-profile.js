@@ -8,8 +8,8 @@ class MainProfile extends Component {
     return (
       <div className="main-profile">
         <ShareBtn/>
-        <Details/>
-        <FollowsLikes/>
+        <Details {...this.props}/>
+        <FollowsLikes {...this.props}/>
       </div>
     );
   }
