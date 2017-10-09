@@ -5,7 +5,7 @@ class CommentsGrid extends Component {
   render() {
     return (
       <div className="comments-grid">
-        <SingleComment/>
+        <SingleComment {...this.props}/>
       </div>
     );
   }

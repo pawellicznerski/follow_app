@@ -10,10 +10,11 @@ class Comments extends Component {
     }
   }
   render() {
+    const {comments, posts}= this.props;
     return (
       <div className="comments">
-        <button className="comments__toggle-comments">{this.state.showComments?"Hide ":"Show "}comments{this.state.commentsCounter}</button>
-        <CommentsGrid></CommentsGrid>
+        <button className="comments__toggle-comments">{this.state.showComments?"Hide ":"Show "}comments{comments[posts[0].code]?`(${comments[posts[0].code].length})`:"(0)"}</button>
+        <CommentsGrid {...this.props}></CommentsGrid>
         <div className="comments__input-cnt">
           <input type="text" className="comments__input" placeholder="Add a comment"></input>
         </div>
