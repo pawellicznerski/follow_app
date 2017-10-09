@@ -9,18 +9,18 @@ class Details extends Component {
   render() {
     const {i} = this.props;
     return (
-        <div className="details">
-          <div className="details__img"></div>
-          <div className="details__text">
-            <h1 className="details__text__name">
-              {this.props.posts[0].caption}
-              <div onClick={this.props.increment.bind(null,i)} className="details__text__name__likes-btn"></div>
-            </h1>
-            <span className="details__text__address">
-              {this.props.posts[0].address}
-            </span>
-          </div>
+      <div className="details">
+        <div className="details__img"></div>
+        <div className="details__text">
+          <h1 className="details__text__name">
+            {this.props.posts[0].caption}
+            <div onClick={this.props.increment.bind(null,i)} className="details__text__name__likes-btn"></div>
+          </h1>
+          <span className="details__text__address">
+            {this.props.posts[0].address}
+          </span>
         </div>
+      </div>
     );
   }
 }
