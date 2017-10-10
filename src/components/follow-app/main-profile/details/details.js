@@ -14,7 +14,7 @@ class Details extends Component {
         <div className="details__text">
           <h1 className="details__text__name">
             {this.props.posts[0].caption}
-            <div onClick={this.props.increment.bind(null,i)} className="details__text__name__likes-btn"></div>
+            <div onClick={this.props.incrementLikes.bind(null,i)} className="details__text__name__likes-btn"></div>
           </h1>
           <span className="details__text__address">
             {this.props.posts[0].address}

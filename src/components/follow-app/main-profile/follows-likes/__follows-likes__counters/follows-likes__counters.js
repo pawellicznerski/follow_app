@@ -6,7 +6,7 @@ export default class Counters extends Component {
     return (
       <div className="follows-likes__counters">
         <SingleCounter number={this.props.posts[0].likes} text="likes"/>
-        <SingleCounter number={this.props.posts[0].follows} text="following"/>
+        <SingleCounter number="0" text="following"/>
         <SingleCounter number={this.props.posts[0].follows} text="followers"/>
       </div>
     );
