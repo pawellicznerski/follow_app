@@ -7,7 +7,7 @@ class Details extends Component {
   //   // const caption = this.props.posts[0].caption;
   // }
   render() {
-    const {i} = this.props;
+    const {i} = this.props.posts[0];
     return (
       <div className="details">
         <div className="details__img"></div>
