@@ -1,10 +1,4 @@
 const comments = {
-  "BAcyDyQwcXX":[
-    {
-      "text":"Totally need to try this.",
-      "user": "heavymetaladam"
-    }
-  ],
   "BAcJeJrQca9":[
     {
       "text":"Wes. WE should have lunch.",
@@ -22,7 +16,14 @@ const comments = {
       "text":"😍 love Hamilton!",
       "user": "willowtreemegs"
     }
+  ],
+  "BAcyDyQwcXX":[
+    {
+      "text":"Totally need to try this.",
+      "user": "heavymetaladam"
+    }
   ]
+
 };
 
 export default comments;

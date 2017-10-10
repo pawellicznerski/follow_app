@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import SingleComment from './__comments-grid__single-comment/comments-grid__single-comment';
+import _ from 'lodash';
 
 class CommentsGrid extends Component {
+  renderItems() {
+      const {code} = this.props.posts[0];
+      return _.map(this.props.comments[code], (comment, index) => comment?<SingleComment id={comment.id} key={index} {...comment} />: null);
+  }
   render() {
     return (
       <div className="comments-grid">
-        <SingleComment {...this.props}/>
+        {this.renderItems()}
       </div>
     );
   }
