@@ -5,7 +5,7 @@ import _ from 'lodash';
 class CommentsGrid extends Component {
   renderItems() {
       const {code} = this.props.posts[0];
-      return _.map(this.props.comments[code], (comment, index) => comment?<SingleComment key={index} {...comment} />: null);
+      return _.map(this.props.comments[code], (comment, index) => comment?<SingleComment key={index} {...comment} commentId={this.props.comments[code].id} {...this.props}/>: null);
   }
   render() {
     return (

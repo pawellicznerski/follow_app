@@ -28,6 +28,13 @@
     .single-comment__content__text {
       padding: 0 10px 70px 0;
       line-height: 21px; }
+    .single-comment__content__btn {
+      border: 0;
+      outline: none;
+      margin-left: 10px;
+      cursor: pointer; }
+      .single-comment__content__btn_hidden {
+        display: none; }
 
 .comments-grid {
   width: 85%; }

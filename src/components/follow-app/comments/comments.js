@@ -27,9 +27,17 @@ class Comments extends Component {
       <div className="comments">
         <button className="comments__toggle-comments">{this.state.showComments?"Hide ":"Show "}comments{comments[posts[0].code]?`(${comments[posts[0].code].length})`:"(0)"}</button>
         <CommentsGrid {...this.props}></CommentsGrid>
-        <form className="comments__input-cnt" onSubmit={this.handleSubmit} onBlur={this.handleBlur}>
-          <input value='' type="text" className="comments__input" placeholder="Add a comment" onChange={this.handleChange} ></input>
-
+        <form
+          className="comments__input-cnt"
+          onSubmit={this.handleSubmit.bind(this)}
+          >
+          <input
+            value=''
+            type="text"
+            className="comments__input"
+            placeholder="Add a comment"
+            onChange={this.handleChange}
+          ></input>
         </form>
       </div>
     );
