@@ -1,6 +1,6 @@
 const posts = [
    {
-        "code":"BAcJeJrQca9",
+      "code":"BAcJeJrQca9",
       "caption":"Harvey Specter",
       "address":"Swarzędz,Poland",
       "likes":56,
