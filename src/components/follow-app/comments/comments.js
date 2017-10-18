@@ -10,35 +10,25 @@ class Comments extends Component {
       value:''
     };
   }
+componentDidMount(){
+  console.log(this.props.posts);
+  console.log(this.state.showComments);
+}// tu jest fit
 
-  // constructor(props) {
-  //     super(props);
-  //
-  //     this.state = {
-  //         menuActive: false,
-  //         value:"all",
-  //         todos:[],
-  //         selectState:[],
-  //         error:null,
-  //         errortext:'',
-  //         selectionActive:false,
-  //         movedTextId:'',
-  //     };
-  // }
+  dupa(){
+    console.log(this.state.showComments);
+    console.log(this.props.posts);
+  }// tu jest undefined
+
   //watches value change in input
   handleChange(event) {
     this.setState({value: event.target.value});
   }
-  dupa(e){
-    e.preventDefault();
-    // console.log(this.props.comments);
-    console.log("this.props.commentId");
-  }
 
   //watches value change in input
-  handleSubmit(event) {
-    event.preventDefault();
-    // this.props.addComment(1,'Krzyś',"this.state.value")
+  handleSubmit() {
+
+    this.props.addComment(1,'Krzyś',"this.state.value")
     this.setState({value: ''});
   }
 
@@ -51,7 +41,7 @@ class Comments extends Component {
         <CommentsGrid {...this.props}></CommentsGrid>
         <form
           className="comments__input-cnt"
-          onSubmit={this.handleSubmit.bind(this)}
+          onSubmit={this.handleSubmit}
           >
           <input
             value=''
