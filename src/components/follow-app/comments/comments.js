@@ -9,15 +9,16 @@ class Comments extends Component {
       commentsCounter:"(23)",
       value:''
     };
+    this.dupa=this.dupa.bind(this)
   }
 componentDidMount(){
-  console.log(this.props.posts);
+  console.log(this);
   console.log(this.state.showComments);
 }// tu jest fit
 
   dupa(){
-    console.log(this.state.showComments);
-    console.log(this.props.posts);
+    console.log(this);
+    console.log(this.state);
   }// tu jest undefined
 
   //watches value change in input
@@ -37,7 +38,7 @@ componentDidMount(){
     return (
       <div className="comments">
         <button
-          onClick={this.dupa} className="comments__toggle-comments">{this.state.showComments?"Hide ":"Show "}comments{comments[posts[0].code]?`(${comments[posts[0].code].length})`:"(0)"} </button>
+          onClick={this.dupa.bind(this)} className="comments__toggle-comments">{this.state.showComments?"Hide ":"Show "}comments{comments[posts[0].code]?`(${comments[posts[0].code].length})`:"(0)"} </button>
         <CommentsGrid {...this.props}></CommentsGrid>
         <form
           className="comments__input-cnt"
