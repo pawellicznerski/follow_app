@@ -26,12 +26,13 @@ class Comments extends Component {
 
   //watches value change in input
   handleSubmit(e) {
-    // e.preventDefault();
+    e.preventDefault();
     // console.log(this.state.user);
     // console.log(this.state.comment);
     //
     // console.log(this);
-    this.props.addComment(145,this.state.user,this.state.comment);
+    this.props.addComment('BAcJeJrQca9'
+,this.state.user,this.state.comment);
 
     this.setState({
       user: '',
@@ -66,6 +67,7 @@ class Comments extends Component {
           onSubmit={this.handleSubmit}
           >
           <input
+            value={this.state.comment}
             type="text"
             className="comments__input"
             placeholder="Add a comment"
@@ -73,6 +75,7 @@ class Comments extends Component {
             name="comment"
           />
           <input
+            value={this.state.user}
             type="text"
             className="comments__input"
             placeholder="Your name"

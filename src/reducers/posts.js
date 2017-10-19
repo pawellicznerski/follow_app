@@ -2,8 +2,6 @@ function posts(state = [], action) {
   switch(action.type) {
     case 'INCREMENT_LIKES' :
       console.log("Incrementing Likes!!");
-      console.log(action.index);
-      console.log(action);
       console.log(state);
       return [
         ...state.slice(0,action.index), // before the one we are updating
@@ -12,9 +10,6 @@ function posts(state = [], action) {
       ]
     case 'INCREMENT_FOLLOWS' :
       console.log("Incrementing Follows!!");
-      console.log(action.index);
-      console.log(action);
-      console.log(state);
       return [
         ...state.slice(0,action.index), // before the one we are updating
         {...state[action.index], follows: state[action.index].follows + 1},
