@@ -19,14 +19,11 @@ background: -moz-linear-gradient($colors);
     margin-top: 1em;
     min-width: 310px;
     width:90%;
-    // min-height: 90%;
     height: 100%;
-    // @include linearGradientEf(180deg,rgba(0,190,0,0.8),rgba(0,190,0,0.8) 50%,rgba(12,34,56,.5) 50%,rgba(12,34,56,.5) 100%);
     background: linear-gradient(to bottom, #002C71 95px,white 0%);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // align-items: flex-start;
     @include laptop{
       width: 1000px;
       box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);

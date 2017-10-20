@@ -17,6 +17,10 @@ class SingleComment extends Component {
       showbtn:false,
     })
   }
+  removing(){
+    this.props.removeComment('BAcJeJrQca9',this.props.commentId);
+
+  }
   render() {
     console.log(this.props.commentId);
     return (
@@ -28,7 +32,7 @@ class SingleComment extends Component {
           <span className="single-comment__content__date">1d</span>
           <p className="single-comment__content__text">
             {this.props.text}
-            <button className={this.state.showbtn?"single-comment__content__btn":"single-comment__content__btn_hidden"} onClick={this.props.removeComment.bind(this.props.commentId)}>&times;</button>
+            <button className={this.state.showbtn?"single-comment__content__btn":"single-comment__content__btn_hidden"} onClick={this.removing.bind(this)}>&times;</button>
           </p>
         </div>
       </article>

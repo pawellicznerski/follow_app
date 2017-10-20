@@ -23,14 +23,9 @@ class Comments extends Component {
     console.log(this);
     console.log(this.state);
   }// tu jest undefined
-
-  //watches value change in input
+  
   handleSubmit(e) {
     e.preventDefault();
-    // console.log(this.state.user);
-    // console.log(this.state.comment);
-    //
-    // console.log(this);
     this.props.addComment('BAcJeJrQca9'
 ,this.state.user,this.state.comment);
 
