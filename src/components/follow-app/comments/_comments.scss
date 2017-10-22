@@ -1,13 +1,16 @@
 @import "./comments-grid/comments-grid";
 @import "./../_cv-page__base/media-query-mixins";
 
+//styles for wrapper div to toggle show of comments
 .hide{
   display: none;
 }
 .show{
   display:flex;
+  width: 100%;
+  border: 1px solid red;
 }
-
+// main styles of comments expept single ones which are in single folder
 .comments{
   width: 85%;
   min-width:283px;
@@ -19,7 +22,9 @@
   align-items: center;
   box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
   &__toggle-comments{
-    border:1px solid black;
+    // border:1px solid black;
+    cursor: pointer;
+    border: 0;
     outline: none;
     background-color: white;
     font-size: 14px;
@@ -38,21 +43,24 @@
   // }
   &__input-cnt{
     border:1px solid blue;
-    height: 66px;
+    height: 120px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
     bottom:0;
     width: 80%;
-    padding-bottom: 5vw;
+    padding-bottom: 2vw;
   }
   &__input{
     border:0;
+    outline: none;
+    // border:1px solid red;
     border-bottom: 2px solid #DBE0E8;
-    width: 95%;
-    height: 27px;
-    margin: 2em 0;
+    width: 85%;
+    height: 37px;
+    // margin: 2em 0;
     &::placeholder{
       font-size: 18px;
       color: #8298B9;
@@ -62,6 +70,27 @@
       border-bottom: 3px solid #FFA640;
       color: #8298B9;
       font-size: 16px;
+    }
+    &__submit{
+      border: 0;
+      border-radius: 30px;
+      outline: none;
+      width: 88%;
+      height: 28px;
+      background-color: #FFA640;
+      // margin-top: 21px;
+      color: white;
+      font-size: 14px;
+      letter-spacing: 4.2px;
+      text-transform: uppercase;
+      font-weight: bold;
+      @include mobile{
+        width: 35%;
+        margin: 0 2% 0 1%;
+      };
+      &:active{
+        border: 3px solid white;
+      }
     }
   }
 }

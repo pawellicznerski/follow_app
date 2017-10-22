@@ -81,7 +81,11 @@ class Comments extends Component {
                 onChange={this.handleInputChange}
                 name="user"
               />
-            <input type="submit" value="submit"></input>
+            <input
+              type="submit"
+              value="submit"
+              className="comments__input__submit"
+              ></input>
             </form>
           </div>
 
