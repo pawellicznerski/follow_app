@@ -20,10 +20,11 @@ class Comments extends Component {
 // }// tu jest fit
 
   toggleComments(){
-    console.log(this);
-    console.log(this.state);
+    this.setState({
+      showComments:!this.state.showComments,
+    });
   }// tu jest undefined
-  
+
   handleSubmit(e) {
     e.preventDefault();
     this.props.addComment('BAcJeJrQca9'
@@ -55,30 +56,35 @@ class Comments extends Component {
     return (
       <div className="comments">
         <button
-          onClick={this.toggleComments} className="comments__toggle-comments">{this.state.showComments?"Hide ":"Show "}comments{comments[posts[0].code]?`(${comments[posts[0].code].length})`:"(0)"} </button>
-        <CommentsGrid {...this.props}></CommentsGrid>
-        <form
-          className="comments__input-cnt"
-          onSubmit={this.handleSubmit}
-          >
-          <input
-            value={this.state.comment}
-            type="text"
-            className="comments__input"
-            placeholder="Add a comment"
-            onChange={this.handleInputChange}
-            name="comment"
-          />
-          <input
-            value={this.state.user}
-            type="text"
-            className="comments__input"
-            placeholder="Your name"
-            onChange={this.handleInputChange}
-            name="user"
-          />
-        <input type="submit" value="submit"></input>
-        </form>
+          onClick={this.toggleComments.bind(this)} className="comments__toggle-comments">{this.state.showComments?"Hide ":"Show "}comments{comments[posts[0].code]?`(${comments[posts[0].code].length})`:"(0)"} </button>
+          <div
+            className={this.state.showComments?"show":"hide"}
+            >
+            <CommentsGrid {...this.props}/>
+            <form
+              className="comments__input-cnt"
+              onSubmit={this.handleSubmit}
+              >
+              <input
+                value={this.state.comment}
+                type="text"
+                className="comments__input"
+                placeholder="Add a comment"
+                onChange={this.handleInputChange}
+                name="comment"
+              />
+              <input
+                value={this.state.user}
+                type="text"
+                className="comments__input"
+                placeholder="Your name"
+                onChange={this.handleInputChange}
+                name="user"
+              />
+            <input type="submit" value="submit"></input>
+            </form>
+          </div>
+
       </div>
     );
   }

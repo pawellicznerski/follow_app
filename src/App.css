@@ -26,8 +26,10 @@
       display: flex;
       justify-content: flex-end; }
     .single-comment__content__text {
-      padding: 0 10px 70px 0;
+      padding: 0 10px 30px 0;
       line-height: 21px; }
+      .single-comment__content__text_last {
+        padding: 0 10px 80px 0; }
     .single-comment__content__btn {
       border: 0;
       outline: none;
@@ -38,6 +40,12 @@
 
 .comments-grid {
   width: 85%; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: flex; }
 
 .comments {
   width: 85%;
@@ -50,7 +58,8 @@
   align-items: center;
   box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.5); }
   .comments__toggle-comments {
-    border: 0;
+    border: 1px solid black;
+    outline: none;
     background-color: white;
     font-size: 14px;
     color: #FFA640;
@@ -63,6 +72,7 @@
         justify-content: flex-start;
         margin: 25px auto; } }
   .comments__input-cnt {
+    border: 1px solid blue;
     height: 66px;
     display: flex;
     justify-content: center;

@@ -1,6 +1,13 @@
 @import "./comments-grid/comments-grid";
 @import "./../_cv-page__base/media-query-mixins";
 
+.hide{
+  display: none;
+}
+.show{
+  display:flex;
+}
+
 .comments{
   width: 85%;
   min-width:283px;
@@ -12,7 +19,8 @@
   align-items: center;
   box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
   &__toggle-comments{
-    border:0;
+    border:1px solid black;
+    outline: none;
     background-color: white;
     font-size: 14px;
     color: #FFA640;
@@ -25,7 +33,11 @@
       margin: 25px auto;
     };
   }
+  // &__toggle-content-wrapper{
+  //
+  // }
   &__input-cnt{
+    border:1px solid blue;
     height: 66px;
     display: flex;
     justify-content: center;

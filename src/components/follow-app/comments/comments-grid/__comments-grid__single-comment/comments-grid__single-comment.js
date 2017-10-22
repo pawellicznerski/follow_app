@@ -22,7 +22,6 @@ class SingleComment extends Component {
 
   }
   render() {
-    console.log(this.props.commentId);
     return (
       <article
         className="single-comment" onMouseOver={this.showBtn.bind(this)} onMouseOut={this.hideBtn.bind(this)}>
@@ -30,7 +29,7 @@ class SingleComment extends Component {
         <div className="single-comment__content">
           <h2 className="single-comment__content__name">{this.props.user}</h2>
           <span className="single-comment__content__date">1d</span>
-          <p className="single-comment__content__text">
+          <p className={`single-comment__content__text ${this.props.commentsLength-1===this.props.commentId?"single-comment__content__text_last":""}`}>
             {this.props.text}
             <button className={this.state.showbtn?"single-comment__content__btn":"single-comment__content__btn_hidden"} onClick={this.removing.bind(this)}>&times;</button>
           </p>
