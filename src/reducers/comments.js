@@ -5,10 +5,10 @@ function postComments(state = [], action) {
       console.log(action.author);
       console.log(action.comment);
       console.log(state);
-      return [...state,{
+      return [{
         user: action.author,
         text: action.comment
-      }];
+      },...state];
     case 'REMOVE_COMMENT':
       // we need to return the new state without the deleted comment
       return [
