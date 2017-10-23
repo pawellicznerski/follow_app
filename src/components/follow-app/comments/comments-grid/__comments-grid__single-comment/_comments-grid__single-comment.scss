@@ -1,7 +1,9 @@
 .single-comment{
   width: 100%;
   display: flex;
-  // border: 1px solid red;
+  box-shadow: 0px 1px 0px 0 rgba(172,172,172,0.50);
+  margin: 2px 0;
+  overflow: hidden;
   // &:hover{
   //   background-color: red;
   //   &::after{
@@ -9,7 +11,7 @@
   //   }
   // }
   &__icon{
-    margin-left: 10px;
+    margin: 10px 0 0 10px;
     width:40px;
     height:40px;
     border-radius: 50%;
@@ -26,7 +28,7 @@
     flex-wrap: wrap;
     color: #002C71;
     font-size: 14px;
-    // border: 1px solid orange;
+    // border: 1px solid red;
     &__name{
       font-size: 14px;
       width: 80%;
