@@ -3,26 +3,26 @@
 @import "./_cv-page__base/cv-page__base__variables";
 
 @mixin linearGradientEf($colors...){
-background: repeating-linear-gradient($colors);
-background: -webkit-linear-gradient($colors);
-background: -o-linear-gradient($colors);
-background: -moz-linear-gradient($colors);
+  background: repeating-linear-gradient($colors);
+  background: -webkit-linear-gradient($colors);
+  background: -o-linear-gradient($colors);
+  background: -moz-linear-gradient($colors);
 }
 
 .primary-container{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   max-height: 100vh;
   background-color: yellow;
   .follow-app{
     font-family: 'Montserrat', sans-serif;
     border-radius: 5px;
-    // margin-top: 1em;
+    margin-top: 1.3em;
     min-width: 310px;
     width:90%;
-    min-height: 95vh;
+    min-height: 90%;
     background: linear-gradient(to bottom, #002C71 95px,white 0%);
     display: flex;
     flex-wrap: wrap;

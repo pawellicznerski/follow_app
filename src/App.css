@@ -44,7 +44,7 @@
 
 .comments-grid {
   width: 85%;
-  overflow: auto; }
+  overflow-y: auto; }
 
 .hide {
   display: none; }
@@ -52,7 +52,9 @@
 .show {
   display: flex;
   width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
 
 .comments {
   width: 85%;
@@ -80,9 +82,9 @@
         justify-content: flex-start;
         margin: 25px auto; } }
   .comments__input-cnt {
-    height: 110px;
+    border: 1px solid blue;
+    height: 300px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     bottom: 0;
@@ -93,19 +95,25 @@
     @media (min-width: 500px) {
       .comments__input-cnt {
         padding: 2vw  auto;
-        height: 130px; } }
+        height: 430px; } }
     @media (min-width: 1000px) {
       .comments__input-cnt {
         width: 850px; } }
+    .comments__input-cnt__input-text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 5px;
+      width: 70%; }
   .comments__input {
     border: 0;
     outline: none;
     border-bottom: 2px solid #DBE0E8;
-    width: 85%;
-    height: 27px;
+    width: 95%;
+    height: 20px;
     color: #8298B9; }
     .comments__input::placeholder {
-      font-size: 14px;
+      font-size: 13px;
       color: #8298B9; }
       @media (min-width: 500px) {
         .comments__input::placeholder {
@@ -113,23 +121,22 @@
     @media (min-width: 500px) {
       .comments__input {
         width: 65%;
-        height: 37px; } }
+        height: 27px; } }
     .comments__input:focus {
       border: 0;
       border-bottom: 3px solid #FFA640;
       color: #8298B9;
-      font-size: 16px; }
+      font-size: 14px; }
     .comments__input__submit {
       border: 0;
       border-radius: 30px;
       outline: none;
-      width: 88%;
-      height: 28px;
+      width: 38%;
+      height: 33px;
       background-color: #FFA640;
-      margin-top: 7px;
       color: white;
       font-size: 14px;
-      letter-spacing: 4.2px;
+      letter-spacing: 1.2px;
       text-transform: uppercase;
       font-weight: bold; }
       @media (min-width: 500px) {
@@ -198,9 +205,9 @@
   border-radius: 30px;
   outline: none;
   width: 88%;
-  height: 48px;
+  height: 38px;
   background-color: #FFA640;
-  margin-top: 21px;
+  margin: 15px 0 6px 0;
   color: white;
   font-size: 14px;
   letter-spacing: 4.2px;
@@ -209,7 +216,8 @@
   @media (min-width: 500px) {
     .follows-likes__follow-btn {
       width: 35%;
-      margin: 0 2% 0 1%; } }
+      margin: 0 2% 0 1%;
+      height: 48px; } }
   .follows-likes__follow-btn:active {
     border: 3px solid white; }
 
@@ -233,7 +241,7 @@
       width: 62%; } }
 
 .follows-likes {
-  margin-top: 33px;
+  margin-top: 13px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -250,7 +258,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 0 solid red;
+  border: 0px solid red;
   outline: none;
   height: 14.1px;
   width: 14.1px;
@@ -276,16 +284,17 @@
 .primary-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   max-height: 100vh;
   background-color: yellow; }
   .primary-container .follow-app {
     font-family: 'Montserrat', sans-serif;
     border-radius: 5px;
+    margin-top: 1.3em;
     min-width: 310px;
     width: 90%;
-    min-height: 95vh;
+    min-height: 90%;
     background: linear-gradient(to bottom, #002C71 95px, white 0%);
     display: flex;
     flex-wrap: wrap;
