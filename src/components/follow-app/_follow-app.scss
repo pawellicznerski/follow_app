@@ -15,11 +15,10 @@
   align-items: flex-start;
   // in case it is put as component in larger project we use "%" instead "vh"
   height: 100vh;
-  background-color: yellow;
   .follow-app{
     font-family: 'Montserrat', sans-serif;
     border-radius: 5px;
-    margin-top: 1.3em;
+    margin-top: 1.0em;
     min-width: 310px;
     width:90%;
     min-height: 90%;

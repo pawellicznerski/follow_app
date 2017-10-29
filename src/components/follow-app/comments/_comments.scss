@@ -17,14 +17,15 @@
   // border: 1px solid green;
   width: 85%;
   min-width:283px;
-  max-height: 15em;
+  min-height: 200px;
+  max-height: 55vh;
   margin:12px 0;
   border-radius:5px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
   @include laptop{
-    max-height: 17em;
+    max-height: 55vh;
   };
   &__toggle-comments{
     // border:1px solid black;
@@ -36,7 +37,7 @@
     color: #FFA640;
     margin: 15px auto 20px auto;
     @include mobile{
-      width: 85%;
+      width: 90%;
       align-self: flex-start;
       display: flex;
       justify-content: flex-start;
@@ -44,26 +45,21 @@
     };
   }
   &__input-cnt{
-    // border: 0;
-    // border:1px solid blue;
-    height: 8em;
+    min-height: 50px;
+    max-height: 10vh;
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     align-items: center;
-    // position: fixed;
     bottom:0;
     width: 90%;
-    // padding: 0.5vw  auto;
-    // margin: 10px auto;
-    // box-shadow: 0 2px 0 0 rgba(172,172,172,0.50);
+    // border: 1px solid black;
     @include mobile{
       padding: 2vw  auto;
-      height: 12em;
-      width: 85%;
+      min-height: 50px;
+      max-height: 10vh;
+      // width: 85%;
     };
     @include laptop{
-      // width: 850px;
     };
     &__input-text{
       display: flex;
@@ -82,7 +78,7 @@
     height: 20px;
     color: #8298B9;
     &::placeholder{
-      font-size: 13px;
+      font-size: 16px;
       color: #8298B9;
       @include mobile{
         font-size: 18px;

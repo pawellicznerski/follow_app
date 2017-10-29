@@ -6,14 +6,15 @@
 .main-profile{
   width: 85%;
   min-width:283px;
-  max-height: 16em;
-  margin-top: 36px;
+  min-height: 180px;
+  max-height: 30vh;
+  margin-top: 26px;
   border-radius: 5px;
   // border: 1px solid red;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
-  @include mobile{
-    // min-height: 186px;
+  @include tablet{
+    margin-top: 36px;
   };
 }

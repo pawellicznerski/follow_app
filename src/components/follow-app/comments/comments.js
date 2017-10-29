@@ -86,7 +86,7 @@ class Comments extends Component {
 
               <input
                 type="submit"
-                value="submit"
+                value="add"
                 className="comments__input__submit"
               ></input>
 

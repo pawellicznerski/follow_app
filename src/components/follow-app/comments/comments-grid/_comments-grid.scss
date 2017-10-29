@@ -1,9 +1,8 @@
 @import "./__comments-grid__single-comment/comments-grid__single-comment";
 
 .comments-grid{
-  width: 85%;
+  width: 90%;
   overflow-y: scroll;
-  min-height:93px;
-  // max-height: 15em;
-  // border: 1px solid red;
+  min-height:40px;
+  max-height:35vh;
 }
