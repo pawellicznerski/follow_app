@@ -6,7 +6,7 @@
 .main-profile{
   width: 85%;
   min-width:283px;
-  // min-height: 235px;
+  max-height: 16em;
   margin-top: 36px;
   border-radius: 5px;
   // border: 1px solid red;
@@ -14,6 +14,6 @@
   flex-direction: column;
   box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
   @include mobile{
-    min-height: 186px;
+    // min-height: 186px;
   };
 }

@@ -2,6 +2,8 @@
 
 .comments-grid{
   width: 85%;
-  overflow-y: auto;
-
+  overflow-y: scroll;
+  min-height:93px;
+  // max-height: 15em;
+  // border: 1px solid red;
 }
