@@ -14,12 +14,13 @@ export function incrementFollows(index) {
 }
 
 // add comment
-export function addComment(postId, author, comment) {
+export function addComment(postId, author, comment, date) {
   return {
     type: 'ADD_COMMENT',
     postId,
     author,
-    comment
+    comment,
+    date
   }
 }
 

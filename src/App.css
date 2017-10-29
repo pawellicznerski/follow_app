@@ -20,17 +20,24 @@
     display: flex;
     flex-wrap: wrap;
     color: #002C71;
-    font-size: 14px; }
+    font-size: 14px;
+    border: 1px solid red;
+    word-wrap: break-word; }
     .single-comment__content__name {
+      border: 1px solid red;
       font-size: 14px;
-      width: 80%; }
+      width: 80%;
+      word-wrap: break-word; }
     .single-comment__content__date {
+      border: 1px solid red;
       opacity: 0.5;
       width: 20%;
       display: flex;
       justify-content: flex-end;
       padding-right: 11px; }
     .single-comment__content__text {
+      border: 1px solid green;
+      width: 80%;
       padding: 0 10px 30px 0;
       line-height: 21px; }
     .single-comment__content__btn {

@@ -2,25 +2,30 @@ const comments = {
   "BAcJeJrQca9":[
     {
       "text":"Wes. WE should have lunch.",
-      "user": "jdaveknox"
+      "user": "jdaveknox",
+      "date":"0"
     },
     {
       "text":"#adults",
-      "user": "jdaveknox"
+      "user": "jdaveknox",
+      "date":"0"
     },
     {
       "text":"@jdaveknox yes!",
-      "user": "wesbos"
+      "user": "wesbos",
+      "date":"0"
     },
     {
       "text":"😍 love Hamilton!",
-      "user": "willowtreemegs"
+      "user": "willowtreemegs",
+      "date":"0"
     }
   ],
   "BAcyDyQwcXX":[
     {
       "text":"Totally need to try this.",
-      "user": "heavymetaladam"
+      "user": "heavymetaladam",
+      "date":"0"
     }
   ]
 

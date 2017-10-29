@@ -3,15 +3,17 @@ import SingleComment from './__comments-grid__single-comment/comments-grid__sing
 import _ from 'lodash';
 
 class CommentsGrid extends Component {
-  renderItems() {
+  renderItems(timeValue) {
       const {code} = this.props.posts[0];
       const commentsLength = this.props.comments[code].length;
-      return _.map(this.props.comments[code], (comment, index) => comment?<SingleComment key={index} {...comment} commentId={index} {...this.props} commentsLength={commentsLength}/>: null);
+      return _.map(this.props.comments[code], (comment, index) => comment?<SingleComment key={index} {...comment} commentId={index} {...this.props} commentsLength={commentsLength}
+      timeValue={timeValue}/>: null);
   }
   render() {
+    const timeValue = Number(new Date())
     return (
       <div className="comments-grid">
-        {this.renderItems()}
+        {this.renderItems(timeValue)}
       </div>
     );
   }
