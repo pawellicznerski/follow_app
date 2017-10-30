@@ -2,9 +2,9 @@ function postComments(state = [], action) {
   switch(action.type){
     case 'ADD_COMMENT':
       // return the new state with the new comment
-      console.log(action.author);
-      console.log(action.comment);
-      console.log(state);
+      // console.log(action.author);
+      // console.log(action.comment);
+      // console.log(state);
       return [{
         user: action.author,
         text: action.comment,
@@ -25,7 +25,7 @@ function postComments(state = [], action) {
 }
 
 function comments(state = [], action) {
-  console.log(state);
+  // console.log(state);
   if(typeof action.postId !== 'undefined') {
     return {
       // take the current state
