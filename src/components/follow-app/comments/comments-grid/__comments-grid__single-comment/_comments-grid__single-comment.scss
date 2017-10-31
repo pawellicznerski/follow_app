@@ -44,14 +44,26 @@
       padding: 0 10px 30px 0;
       line-height: 21px;
     }
-    &__btn{
-      border: 0;
-      outline: none;
-      margin-left: 10px;
+    &__menu{
+      min-height: 10px;
+      min-width: 10px;
+      position: relative;
+      // background-image: url("./components/follow-app/comments/comments-grid/__comments-grid__single-comment/person.svg");
+      background-position: center;
+      background-size: 35px 35px;
+      background-repeat: no-repeat;
+      background-color: rgba(170, 170, 170, 1);
       cursor: pointer;
-      &_hidden{
-        display: none;
+      &__list{
+        display:none;
+        &__item{
+
+        }
+      }//list
+      &__list_visible{
+        position: absolute;
+        display:block;
       }
-    }
-  }
+    }//menu
+  }//contenet
 }
