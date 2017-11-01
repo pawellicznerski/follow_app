@@ -37,19 +37,56 @@
       padding: 0 10px 30px 0;
       line-height: 21px; }
     .single-comment__content__menu {
-      min-height: 10px;
-      min-width: 10px;
-      position: relative;
-      background-position: center;
-      background-size: 35px 35px;
-      background-repeat: no-repeat;
-      background-color: #aaaaaa;
-      cursor: pointer; }
-      .single-comment__content__menu__list {
-        display: none; }
-      .single-comment__content__menu__list_visible {
-        position: absolute;
-        display: block; }
+      width: 20%;
+      display: flex;
+      justify-content: flex-end; }
+      .single-comment__content__menu__wrapper {
+        height: 20px;
+        width: 20px;
+        margin: 5px 10px 0 0;
+        position: relative;
+        background-image: url("./components/follow-app/comments/comments-grid/__comments-grid__single-comment/menu.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer; }
+        .single-comment__content__menu__wrapper__list {
+          display: none; }
+        .single-comment__content__menu__wrapper__list_visible {
+          position: absolute;
+          bottom: 2px;
+          right: 24px;
+          display: block;
+          width: 0;
+          height: 45px;
+          background-color: white;
+          border: 1px solid #002C71;
+          display: flex;
+          border-radius: 4px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          animation: animateMenu 0.2s ease forwards; }
+          .single-comment__content__menu__wrapper__list_visible__el {
+            list-style-type: none;
+            opacity: 0;
+            animation: showMenuContent 0.23s ease forwards;
+            color: #002C71; }
+            .single-comment__content__menu__wrapper__list_visible__el:hover {
+              color: white;
+              background-color: #FFA640; }
+
+@keyframes animateMenu {
+  0% {
+    width: 0; }
+  100% {
+    width: 60px; } }
+
+@keyframes showMenuContent {
+  99% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .comments-grid {
   width: 90%;

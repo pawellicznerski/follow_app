@@ -47,17 +47,22 @@ class SingleComment extends Component {
           </p>
           <div
             className="single-comment__content__menu"
-            onMouseOver={this.showList.bind(this)}
-            onMouseLeave={this.hideList.bind(this)}
             >
-            <ul className={this.state.isVisibleList?"single-comment__content__menu__list_visible":"single-comment__content__menu__list"}
+            <div
+              className="single-comment__content__menu__wrapper"
+              onMouseOver={this.showList.bind(this)}
+              onMouseLeave={this.hideList.bind(this)}
               >
-              <li className="single-comment__content__menu__list__el">edit</li>
-              <li
-                className="single-comment__content__menu__list__el"
-                onClick={this.removing.bind(this)} >remove</li>
-            </ul>
+              <ul className={this.state.isVisibleList?"single-comment__content__menu__wrapper__list_visible":"single-comment__content__menu__wrapper__list"}
+                >
+                <li className="single-comment__content__menu__wrapper__list_visible__el">edit</li>
+                <li
+                  className="single-comment__content__menu__wrapper__list_visible__el"
+                  onClick={this.removing.bind(this)} >remove</li>
+              </ul>
+            </div>
           </div>
+
         </div>
       </article>
     );
