@@ -9,18 +9,26 @@ class SingleComment extends Component {
       isVisibleList:false
     }
   }
-  showList(){
+  showList(e){
+    // e.stopImmediatePropagation();
     this.setState({
       isVisibleList:true,
     })
   }
-  hideList(){
+  hideList(e){
+    // e.stopImmediatePropagation();
     this.setState({
       isVisibleList:false,
     })
   }
-  removing(){
+  removing(e){
+    e.stopPropagation();
+    e.preventDefault();
     this.props.removeComment('BAcJeJrQca9',this.props.commentId);
+  }
+  preventDefault(e){
+    // e.stopPropagation();
+    // e.preventDefault();
   }
   renderAddingTime(timeNo){
     if (timeNo < 59000) {
@@ -53,13 +61,19 @@ class SingleComment extends Component {
               onMouseOver={this.showList.bind(this)}
               onMouseLeave={this.hideList.bind(this)}
               >
-              <ul className={this.state.isVisibleList?"single-comment__content__menu__wrapper__list_visible":"single-comment__content__menu__wrapper__list"}
-                >
-                <li className="single-comment__content__menu__wrapper__list_visible__el">edit</li>
+
+              <ul className={this.state.isVisibleList?"single-comment__content__menu__wrapper__list_visible":"single-comment__content__menu__wrapper__list"}>
+
                 <li
-                  className="single-comment__content__menu__wrapper__list_visible__el"
-                  onClick={this.removing.bind(this)} >remove</li>
+                  className={this.state.isVisibleList?"single-comment__content__menu__wrapper__list_visible__el":"single-comment__content__menu__wrapper__list_visible__el_hidden"}>edit
+                </li>
+                <li
+                  className={this.state.isVisibleList?"single-comment__content__menu__wrapper__list_visible__el":"single-comment__content__menu__wrapper__list_visible__el_hidden"}
+                  onClick={this.removing.bind(this)} >remove
+                </li>
+
               </ul>
+
             </div>
           </div>
 

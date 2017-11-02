@@ -55,7 +55,7 @@
         .single-comment__content__menu__wrapper__list_visible {
           position: absolute;
           bottom: 2px;
-          right: 24px;
+          right: 21px;
           display: block;
           width: 0;
           height: 45px;
@@ -72,7 +72,10 @@
             opacity: 0;
             animation: showMenuContent 0.23s ease forwards;
             color: #002C71; }
+            .single-comment__content__menu__wrapper__list_visible__el_hidden {
+              display: none; }
             .single-comment__content__menu__wrapper__list_visible__el:hover {
+              display: block;
               color: white;
               background-color: #FFA640; }
 
