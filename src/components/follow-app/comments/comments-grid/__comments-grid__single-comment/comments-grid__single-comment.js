@@ -6,29 +6,47 @@ class SingleComment extends Component {
     this.state={
       addingTimeValue:'',
       addingTimeUnits:'',
-      isVisibleList:false
+      isVisibleList:false,
+      isFocused:false
     }
   }
-  showList(e){
-    // e.stopImmediatePropagation();
+  // showList(e){
+  //   // e.preventDefault();
+  //   // e.stopPropagation();
+  //   console.log("click");
+  //   this.setState({
+  //     isVisibleList:true,
+  //   })
+  // }
+  // hideList(){
+  //   console.log("hide");
+  //   this.setState({
+  //     isVisibleList:false,
+  //   })
+  // }
+  handleMouseOver(){
     this.setState({
-      isVisibleList:true,
+      isMouseOver:true,
     })
   }
-  hideList(e){
-    // e.stopImmediatePropagation();
+  handleMouseLeave(){
     this.setState({
+      isMouseOver:false,
       isVisibleList:false,
     })
   }
-  removing(e){
-    e.stopPropagation();
-    e.preventDefault();
-    this.props.removeComment('BAcJeJrQca9',this.props.commentId);
+  toggleList(){
+    // if(this.state.isMouseOver){
+      console.log("hide");
+      this.setState({
+        isVisibleList:!this.state.isVisibleList,
+      })
+    // }
   }
-  preventDefault(e){
-    // e.stopPropagation();
-    // e.preventDefault();
+  removing(e){
+    e.preventDefault();
+    console.log("remove");
+    this.props.removeComment('BAcJeJrQca9',this.props.commentId);
   }
   renderAddingTime(timeNo){
     if (timeNo < 59000) {
@@ -45,33 +63,51 @@ class SingleComment extends Component {
     const timeNo = this.props.timeValue - this.props.date;
     return (
       <article
-        className="single-comment">
+        className="single-comment"
+        onMouseOver={this.handleMouseOver.bind(this)}
+        onMouseLeave={this.handleMouseLeave.bind(this)}
+        >
         <div className="single-comment__icon"></div>
         <div className="single-comment__content">
-          <h2 className="single-comment__content__name">{this.props.user}</h2>
-          <span className="single-comment__content__date">{this.renderAddingTime(timeNo)}</span>
-          <p className={`single-comment__content__text ${this.props.commentsLength-1===this.props.commentId?"single-comment__content__text_last":""}`}>
-            {this.props.text}
+          <h2
+            className="single-comment__content__name"
+            >{this.props.user}
+          </h2>
+          <span
+            className="single-comment__content__date"
+            >{this.renderAddingTime(timeNo)}
+          </span>
+          <p
+            className={
+              `single-comment__content__text
+               ${this.props.commentsLength-1===this.props.commentId?"single-comment__content__text_last":""}`
+             }>{this.props.text}
           </p>
           <div
             className="single-comment__content__menu"
             >
             <div
               className="single-comment__content__menu__wrapper"
-              onMouseOver={this.showList.bind(this)}
-              onMouseLeave={this.hideList.bind(this)}
+              onClick={this.toggleList.bind(this)}
               >
 
-              <ul className={this.state.isVisibleList?"single-comment__content__menu__wrapper__list_visible":"single-comment__content__menu__wrapper__list"}>
-
+              <ul className={
+                  this.state.isVisibleList
+                  ?"single-comment__content__menu__wrapper__list_visible"
+                  :"single-comment__content__menu__wrapper__list"}>
                 <li
-                  className={this.state.isVisibleList?"single-comment__content__menu__wrapper__list_visible__el":"single-comment__content__menu__wrapper__list_visible__el_hidden"}>edit
+                  className={
+                    this.state.isVisibleList
+                    ?"single-comment__content__menu__wrapper__list_visible__el"
+                    :"single-comment__content__menu__wrapper__list__el"}>edit
                 </li>
                 <li
-                  className={this.state.isVisibleList?"single-comment__content__menu__wrapper__list_visible__el":"single-comment__content__menu__wrapper__list_visible__el_hidden"}
+                  className={
+                    this.state.isVisibleList
+                    ?"single-comment__content__menu__wrapper__list_visible__el"
+                    :"single-comment__content__menu__wrapper__list__el"}
                   onClick={this.removing.bind(this)} >remove
                 </li>
-
               </ul>
 
             </div>
