@@ -99,12 +99,6 @@ class SingleComment extends Component {
                   className={
                     this.state.isVisibleList
                     ?"single-comment__content__menu__wrapper__list_visible__el"
-                    :"single-comment__content__menu__wrapper__list__el"}>edit
-                </li>
-                <li
-                  className={
-                    this.state.isVisibleList
-                    ?"single-comment__content__menu__wrapper__list_visible__el"
                     :"single-comment__content__menu__wrapper__list__el"}
                   onClick={this.removing.bind(this)} >remove
                 </li>
@@ -119,3 +113,9 @@ class SingleComment extends Component {
   }
 }
 export default SingleComment;
+// <li
+//   className={
+//     this.state.isVisibleList
+//     ?"single-comment__content__menu__wrapper__list_visible__el"
+//     :"single-comment__content__menu__wrapper__list__el"}>edit
+// </li>

@@ -138,6 +138,7 @@
         justify-content: flex-start;
         margin: 15px auto 20px auto; } }
   .comments__input-cnt {
+    margin-top: 15px;
     min-height: 50px;
     max-height: 10vh;
     display: flex;

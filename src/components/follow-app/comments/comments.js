@@ -23,10 +23,8 @@ class Comments extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const dateIntoNo = Number(new Date())
-    this.props.addComment('BAcJeJrQca9'
-,this.state.user,this.state.comment,dateIntoNo);
-
+    const dateIntoNo = Number(new Date());
+    (this.state.user&&this.state.comment)?this.props.addComment('BAcJeJrQca9',this.state.user,this.state.comment,dateIntoNo):null;
     this.setState({
       user: '',
       comment:''
