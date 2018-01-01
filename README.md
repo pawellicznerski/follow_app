@@ -1,1 +1,1 @@
-Zapraszam do obejezenia demo: https://pawellicznerski.github.io/follow_app/
+Zapraszam do obejzenia demo: https://pawellicznerski.github.io/follow_app/
