@@ -2,7 +2,7 @@
   "name": "training-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://pawellicznerski.github.io/follow_app",
+  "homepage": "https://pawellicznerski.github.io/follow_app",
   "dependencies": {
     "css-loader": "^0.28.4",
     "node-sass-chokidar": "0.0.3",
